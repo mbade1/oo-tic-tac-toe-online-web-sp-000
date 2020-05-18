@@ -4,14 +4,6 @@ class TicTacToe
     @board = [" ", " "," ", " "," ", " "," ", " "," "]
   end
 
-  # def play
-  #   # @board = Array.new(9, " ")
-  #   turn until over?
-  #   won? ? puts("Congratulations #{winner}!") : puts("Cat's Game!")
-  #   puts "Would you like to play again? (Y or N)"
-  #   gets.strip.downcase == "y" || gets.strip.downcase == "yes" ? play : puts("Goodbye!")
-  # end
-
   def play
     # @board = Array.new(9, " ")
     # Play until someone wins or there is a draw
@@ -23,9 +15,6 @@ class TicTacToe
       puts "Cat's Game!"
     end
   end
-
-
-
 
   WIN_COMBINATIONS = [
     [0, 1, 2], #top row
@@ -133,8 +122,4 @@ def winner
       nil
     end
   end
-
-
-
-
 end
